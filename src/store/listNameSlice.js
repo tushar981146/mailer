@@ -2,7 +2,7 @@ import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import reducer from './allDataSlice';
 
 export const listNames = createAsyncThunk('listNames', async () => {
-    const res = await fetch('http://localhost:3000/form/uniqueId');
+    const res = await fetch('https://potfolio-backend-je57.onrender.com/form/uniqueId');
     return res.json();
 });
 

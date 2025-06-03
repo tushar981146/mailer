@@ -14,7 +14,7 @@ export const allMessagesFetch = createAsyncThunk("allMessages", async (items) =>
              value = item;
         });
 
-        const res = await fetch("http://localhost:3000/form/uniqueId", 
+        const res = await fetch("https://potfolio-backend-je57.onrender.com/form/uniqueId", 
             {
             method: "POST",
             headers: {

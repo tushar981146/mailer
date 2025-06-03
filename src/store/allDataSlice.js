@@ -2,7 +2,7 @@ import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 
 //action to fetch all data from the server
 export const fetchMailData = createAsyncThunk('fetchMailData', async () => {
-    const res = await fetch('http://localhost:3000/form');
+    const res = await fetch('https://potfolio-backend-je57.onrender.com/form');
     return res.json();
 });
 
